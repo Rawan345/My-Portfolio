@@ -1,105 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>My Portfolio</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background: #121212;
-  }
-  h1 {
-    color: #32CD32; /* Lime Green */
-    margin-bottom: 20px;
-  }
-  h2 {
-    color: #32CD32; /* Lime Green للعناوين */
-  }
-  section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  ul li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #2c2c2c;
-    border-radius: 5px;
-  }
-  a {
-    color: #32CD32;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #90EE90; /* أخضر فاتح تفاحي عند hover */
-  }
-</style>
+  <meta charset="UTF-8" />
+  <title>Rawan Fayez</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-color: #0e0f11;
+      background-image: url("images/code-pattern.png");
+      background-size: 400px; /* كبرنا النقوش */
+      background-repeat: repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      padding: 20px;
+      background: rgba(18, 19, 20, 0.6); /* لون الكونتينر */
+      border-radius: 12px;
+    }
+
+    h1, h2 {
+      color: #32CD32;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: rgba(25, 26, 27, 0.75); /* لون الكاردز أفتح */
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: rgba(30, 31, 32, 0.85); /* كارد داخل القوائم */
+      border-radius: 5px;
+    }
+
+    a {
+      color: #32CD32;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #90EE90;
+    }
+
+    .certificates-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px 0;
+      scroll-behavior: smooth;
+    }
+
+    .cert-card {
+      flex: 0 0 auto;
+      width: 500px;
+      text-align: center;
+    }
+
+    .cert-card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .cert-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .cert-card p {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Rawan Fayez</h1>
 
-<h1>My Portfolio</h1>
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="text-align:center; font-weight:bold;">
+        I have a bachelor degree in Management Information Systems and I am a data enthusiast with skills in
+        Python, SQL, and Microsoft Excel. Passionate about analyzing data and solving problems.
+      </p>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a data enthusiast with skills in Python, SQL, and Microsoft Excel. Passionate about analyzing data and solving problems.</p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Student Database Management System</strong><br />
-      A MySQL project for managing students, teachers, and subjects using advanced SQL features like joins, views, and procedures.<br />
-      Tech: MySQL, SQL<br />
-      <a href="https://github.com/Rawan345/school-database-project" target="_blank">View code</a>
-    </li>
-    <li>
-      <strong>Bank Account Simulation</strong><br />
-      Simulates bank transactions (deposit, withdrawal, balance check) using Python OOP.<br />
-      Tech: Python (OOP, datetime)<br />
-      <a href="https://github.com/Rawan345/bank-account-project" target="_blank">View code</a>
-    </li>
-
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
         <li>
-      <strong>Twitter Simulation</strong><br />
-      A MySQL-based simulation of Twitter supporting user registration, tweeting, following, liking, and retweeting using advanced SQL.<br />
-      Tech: MySQL, SQL (procedures, foreign keys, timestamps)<br />
-      <a href="https://github.com/Rawan345/twitter-simulation" target="_blank">View code</a>
-    </li>
+          <strong>Student Database Management System</strong><br />
+          A MySQL project for managing students, teachers, and subjects using advanced SQL features like joins, views, and procedures.<br />
+          Tech: MySQL, SQL<br />
+          <a href="https://github.com/Rawan345/school-database-project" target="_blank">View code</a>
+        </li>
+        <li>
+          <strong>Bank Account Simulation</strong><br />
+          Simulates bank transactions (deposit, withdrawal, balance check) using Python OOP.<br />
+          Tech: Python (OOP, datetime)<br />
+          <a href="https://github.com/Rawan345/bank-account-project" target="_blank">View code</a>
+        </li>
+        <li>
+          <strong>Twitter Simulation</strong><br />
+          A MySQL-based simulation of Twitter supporting user registration, tweeting, following, liking, and retweeting using advanced SQL.<br />
+          Tech: MySQL, SQL (procedures, foreign keys, timestamps)<br />
+          <a href="https://github.com/Rawan345/twitter-simulation" target="_blank">View code</a>
+        </li>
+      </ul>
+    </section>
 
-  </ul>
-</section>
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <div class="certificates-scroll">
+        <div class="cert-card">
+          <img src="images/mastering-excel.png" alt="Mastering Excel">
+          <p>Mastering Excel</p>
+        </div>
+        <!-- أضيفي المزيد لاحقاً -->
+      </div>
+    </section>
 
-
-
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>Python Series — Satr (101, 102, 103, 104)</li>
-    <li>SQL Series — Satr (101, 102, 103)</li>
-    <li>Mastering Excel — Edraak</li>
-  </ul>
-</section>
-
-
-
-
-<section id="contact">
-  <h2>Contact</h2>
-  <ul>
-    <li>Email: rawan.alshehri702@gmail.com</li>
-    <li>Github: <a href="https://github.com/Rawan345" target="_blank">@Rawan345</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/rawan-shehri/" target="_blank">@RawanFayez</a></li>
-  </ul>
-</section>
-
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>📧 Email: <a href="mailto:rawan.alshehri702@gmail.com">Send me an email</a></li>
+        <li>💻 GitHub: <a href="https://github.com/Rawan345" target="_blank">GitHub Profile</a></li>
+        <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/rawan-shehri/" target="_blank">LinkedIn Profile</a></li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
